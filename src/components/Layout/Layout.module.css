@@ -1,0 +1,137 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--color-bg);
+  border-right: 1px solid var(--color-divider);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0;
+  z-index: 100;
+}
+
+.sidebarTop {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.logo {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: var(--color-body-text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all var(--transition);
+  border-left: 3px solid transparent;
+}
+
+.navLink img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+.navLink:hover {
+  background: var(--color-surface);
+}
+
+.navLink:hover img {
+  opacity: 1;
+}
+
+.active {
+  background: var(--color-surface);
+  border-left-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.active img {
+  opacity: 1;
+}
+
+.sidebarBottom {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 1px solid var(--color-divider);
+  padding-top: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileInfo {
+  flex: 1;
+  overflow: hidden;
+}
+
+.profileName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-heading);
+  margin: 0;
+}
+
+.profileEmail {
+  font-size: 12px;
+  color: var(--color-divider);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebarBottom .btn-secondary {
+  width: 100%;
+}
+
+.main {
+  margin-left: var(--sidebar-width);
+  flex: 1;
+  background: var(--color-bg);
+  padding: 32px;
+  min-height: 100vh;
+}

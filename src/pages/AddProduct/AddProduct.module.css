@@ -1,0 +1,10 @@
+.addProductPage {
+  max-width: 900px;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 32px;
+}
