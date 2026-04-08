@@ -60,7 +60,7 @@ export default function Login() {
               <input
                 type="email"
                 className={`input-field ${errors.email ? 'error' : ''}`}
-                placeholder="admin@saev.com"
+                placeholder="Enter email"
                 {...register('email', {
                   required: 'Email is required',
                   pattern: {
